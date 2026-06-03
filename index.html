@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Eswara Sai Katakam — Cyber Security student & Full Stack Developer from Bapatla. I build things for the web and try to keep them secure." />
+  <title>Eswara Sai · Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Syne:wght@700;800&family=Caveat:wght@500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">eswar<span>.</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Journey</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <a href="mailto:eswarasai@example.com" class="btn-hire" id="nav-hire">Say hi 👋</a>
+      <button class="hamburger" id="hamburger" aria-label="menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ── HERO ── -->
+    <section class="hero" id="home">
+      <canvas id="heroCanvas"></canvas>
+      <div class="hero-shape s1"></div>
+      <div class="hero-shape s2"></div>
+      <div class="hero-shape s3"></div>
+
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-pulse"></span> Open to work · Bapatla, India
+        </div>
+        <p class="hero-role">Cyber Security + Full Stack</p>
+        <h1 class="hero-name">
+          Hey, I'm <span class="name-k">Eswara Sai</span><span class="dot">.</span>
+        </h1>
+        <p class="hero-desc"></p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary" id="hero-work-btn">See my work</a>
+          <a href="#contact" class="btn-outline" id="hero-talk-btn">Let's talk</a>
+        </div>
+        <div class="hero-glass-cards">
+          <div class="glass-card gc1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <span>🛡️ Cyber Security</span>
+          </div>
+          <div class="glass-card gc2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+            <span>💻 Full Stack Dev</span>
+          </div>
+          <div class="glass-card gc3">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+              <rect x="9" y="9" width="6" height="6"></rect>
+              <line x1="9" y1="1" x2="9" y2="4"></line>
+              <line x1="15" y1="1" x2="15" y2="4"></line>
+              <line x1="9" y1="20" x2="9" y2="23"></line>
+              <line x1="15" y1="20" x2="15" y2="23"></line>
+              <line x1="20" y1="9" x2="23" y2="9"></line>
+              <line x1="20" y1="15" x2="23" y2="15"></line>
+              <line x1="1" y1="9" x2="4" y2="9"></line>
+              <line x1="1" y1="15" x2="4" y2="15"></line>
+            </svg>
+            <span>🤖 AI Tinkerer</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll" id="scroll-cue">
+        <span>scroll</span>
+        <div class="scroll-wheel"></div>
+      </div>
+    </section>
+
+    <!-- ── ABOUT ── -->
+    <section class="about section reveal" id="about">
+      <div class="container">
+        <span class="section-eyebrow">A bit about me</span>
+        <h2 class="section-heading">
+          I <span class="accent">solve problems</span> and build secure systems
+        </h2>
+        <p class="section-sub">
+          Started with curiosity about how websites work, then got obsessed with
+          cyber security after realizing how easy it is to break things.
+          Now I do both — build and secure.
+        </p>
+        <p class="section-sub">
+          Outside of screens, I enjoy hackathons, tech workshops, and occasionally
+          losing sleep over a tricky bug at 2am (we've all been there).
+        </p>
+
+        <div class="about-stats">
+          <div class="astat">
+            <span class="astat-num" data-target="2">0</span><span class="astat-plus">+</span>
+            <p>Years of learning & building</p>
+          </div>
+          <div class="astat-line"></div>
+          <div class="astat">
+            <span class="astat-num" data-target="10">0</span><span class="astat-plus">+</span>
+            <p>Projects shipped</p>
+          </div>
+          <div class="astat-line"></div>
+          <div class="astat">
+            <span class="astat-num" data-target="5">0</span><span class="astat-plus">+</span>
+            <p>Tech stacks explored</p>
+          </div>
+          <div class="astat-line"></div>
+          <div class="astat">
+            <span class="astat-num" data-target="3">0</span>
+            <p>Internships done</p>
+          </div>
+        </div>
+
+        <div class="about-cards">
+          <div class="about-card">
+            <div class="ac-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path>
+              </svg>
+            </div>
+            <h3>Education</h3>
+            <p>Studying Cyber Security Engineering @ Bapatla College of Engineering</p>
+          </div>
+          <div class="about-card">
+            <div class="ac-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h3>Current Project</h3>
+            <p>Building a custom network vulnerability monitoring dashboard</p>
+          </div>
+          <div class="about-card">
+            <div class="ac-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                </path>
+              </svg>
+            </div>
+            <h3>Learning Deeply</h3>
+            <p>Diving into Docker, container security, and advanced networking</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SKILLS ── -->
+    <section class="skills section reveal" id="skills">
+      <div class="container">
+        <span class="section-eyebrow">What I work with</span>
+        <h2 class="section-heading">My <span class="accent">toolkit</span></h2>
+        <p class="section-sub">Things I've actually used — not just listed for the sake of it.</p>
+
+        <div class="skills-grid">
+          <div class="skill-group">
+            <div class="sg-header">
+              <span class="sg-icon">🎨</span>
+              <h3>Frontend</h3>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill">HTML</span>
+              <span class="skill-pill">CSS</span>
+              <span class="skill-pill">JavaScript</span>
+              <span class="skill-pill">React</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <div class="sg-header">
+              <span class="sg-icon">⚙️</span>
+              <h3>Backend</h3>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill">Node.js</span>
+              <span class="skill-pill">Express.js</span>
+              <span class="skill-pill">MongoDB</span>
+              <span class="skill-pill">MySQL</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <div class="sg-header">
+              <span class="sg-icon">⌨️</span>
+              <h3>Languages</h3>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill">C</span>
+              <span class="skill-pill">Python</span>
+              <span class="skill-pill">Java</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <div class="sg-header">
+              <span class="sg-icon">🛠️</span>
+              <h3>Tools</h3>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill">Git</span>
+              <span class="skill-pill">GitHub</span>
+              <span class="skill-pill">VS Code</span>
+              <span class="skill-pill">Figma</span>
+              <span class="skill-pill">Stitch</span>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- ── PROJECTS ── -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <span class="section-eyebrow">Things I've built</span>
+        <h2 class="section-heading">Projects that <span class="accent">actually work</span></h2>
+        <p class="section-sub">Some real stuff — not just to-do apps.</p>
+
+        <div class="projects-grid">
+          <article class="proj-card featured">
+            <div class="proj-top">
+              <div class="proj-icon">☁️</div>
+              <span class="proj-num">01</span>
+            </div>
+            <span class="proj-cat">Weather · Frontend</span>
+            <h3>Weather Web Application</h3>
+            <p>
+              Real-time weather tracking application with interactive forecast metrics, location searches, and detailed
+              weather conditions. Integrates OpenWeatherMap API with custom UI state transitions.
+            </p>
+            <div class="proj-techs">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Weather API</span>
+            </div>
+            <a href="#" class="proj-link">
+              View it
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+          </article>
+
+          <article class="proj-card">
+            <div class="proj-top">
+              <div class="proj-icon">🛒</div>
+              <span class="proj-num">02</span>
+            </div>
+            <span class="proj-cat">E-Commerce · Full Stack</span>
+            <h3>E-Commerce Platform</h3>
+            <p>
+              Full shopping experience — cart, auth, payments, admin panel.
+              This one took me a month to build properly. Lots of debugging.
+              Lots of coffee. Totally worth it.
+            </p>
+            <div class="proj-techs">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>MongoDB</span>
+            </div>
+            <a href="#" class="proj-link">
+              View it
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+          </article>
+
+          <article class="proj-card">
+            <div class="proj-top">
+              <div class="proj-icon">🛡️</div>
+              <span class="proj-num">03</span>
+            </div>
+            <span class="proj-cat">Security · Dashboard</span>
+            <h3>Cyber Security Dashboard</h3>
+            <p>
+              Monitors threats and vulnerability reports in real-time.
+              This was my favourite project — it actually sits at the intersection
+              of my two interests: security and web dev.
+            </p>
+            <div class="proj-techs">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>Chart.js</span>
+            </div>
+            <a href="#" class="proj-link">
+              View it
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+          </article>
+
+          <article class="proj-card">
+            <div class="proj-top">
+              <div class="proj-icon">🏫</div>
+              <span class="proj-num">04</span>
+            </div>
+            <span class="proj-cat">Education · Management</span>
+            <h3>Smart Attendance System</h3>
+            <p>
+              Automated student attendance tracking with reports and notifications.
+              Built this after seeing how manual attendance wasted 10 minutes
+              of every class.
+            </p>
+            <div class="proj-techs">
+              <span>JavaScript</span>
+              <span>MongoDB</span>
+              <span>Express</span>
+            </div>
+            <a href="#" class="proj-link">
+              View it
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EXPERIENCE ── -->
+    <section class="experience section reveal" id="experience">
+      <div class="container">
+        <span class="section-eyebrow">My journey so far</span>
+        <h2 class="section-heading">Where I've <span class="accent">been</span></h2>
+
+        <div class="exp-layout">
+          <div>
+            <h3 class="exp-sub-heading">Education 🎓</h3>
+            <div class="timeline">
+              <div class="tl-line"></div>
+
+              <div class="tl-item">
+                <div class="tl-dot"></div>
+                <div class="tl-body">
+                  <span class="tl-year">2023 – Present</span>
+                  <div class="tl-card">
+                    <h4>B.Tech — Cyber Security Engineering</h4>
+                    <p class="tl-org">Bapatla College of Engineering</p>
+                    <div class="tl-tags">
+                      <span>2nd Year</span>
+                      <span>Bapatla, AP</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tl-item">
+                <div class="tl-dot"></div>
+                <div class="tl-body">
+                  <span class="tl-year">2022 – 2023</span>
+                  <div class="tl-card">
+                    <h4>Intermediate — MPC</h4>
+                    <p class="tl-org">Narayana Junior College</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tl-item">
+                <div class="tl-dot"></div>
+                <div class="tl-body">
+                  <span class="tl-year">Completed 2021</span>
+                  <div class="tl-card">
+                    <h4>SSC</h4>
+                    <p class="tl-org">C.K. Junior High School</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="exp-sub-heading">Internships 💼</h3>
+            <div class="intern-cards">
+              <div class="intern-card">
+                <div class="ic-icon">🐍</div>
+                <div>
+                  <strong>Python Full Stack Developer Intern</strong>
+                  <p>Developing web servers, RESTful APIs, and automating security scripts with Django and Flask.</p>
+                </div>
+              </div>
+              <div class="intern-card">
+                <div class="ic-icon">🛡️</div>
+                <div>
+                  <strong>Cyber Security Intern</strong>
+                  <p>Security audits, vulnerability scanning, and reporting.</p>
+                </div>
+              </div>
+              <div class="intern-card">
+                <div class="ic-icon">☕</div>
+                <div>
+                  <strong>Java Full Stack Developer Intern</strong>
+                  <p>Built and deployed full-stack apps using Java ecosystem.</p>
+                </div>
+              </div>
+              <div class="intern-card">
+                <div class="ic-icon">🎨</div>
+                <div>
+                  <strong>UI/UX Design Intern</strong>
+                  <p>Designed interfaces and mapped user journeys in Figma.</p>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="exp-sub-heading" style="margin-top:36px">Achievements 🏆</h3>
+            <div class="achievements">
+              <span class="ach-chip">🛡️ Working as Intern in Cyber Security</span>
+              <span class="ach-chip">✅ Technical Workshops attended</span>
+              <span class="ach-chip">🎤 Project Presentations delivered</span>
+              <span class="ach-chip">💡 Hackathon participant</span>
+            </div>
+
+            <div class="strengths-wrap">
+              <h3 class="exp-sub-heading">Strengths 💪</h3>
+              <div class="strengths-grid">
+                <div class="strength-card">
+                  <div class="str-icon">🚀</div>
+                  <h4>Leadership</h4>
+                </div>
+                <div class="strength-card">
+                  <div class="str-icon">⚡</div>
+                  <h4>Quick Learning</h4>
+                </div>
+                <div class="strength-card">
+                  <div class="str-icon">🧩</div>
+                  <h4>Problem Solving</h4>
+                </div>
+                <div class="strength-card">
+                  <div class="str-icon">⏱️</div>
+                  <h4>Time Management</h4>
+                </div>
+                <div class="strength-card">
+                  <div class="str-icon">🤝</div>
+                  <h4>Team Player</h4>
+                </div>
+                <div class="strength-card">
+                  <div class="str-icon">💬</div>
+                  <h4>Communication</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SERVICES ── -->
+    <section class="services section reveal" id="services">
+      <div class="container">
+        <span class="section-eyebrow">What I can do for you</span>
+        <h2 class="section-heading">Services</h2>
+
+        <div class="services-grid">
+          <div class="svc-card">
+            <div class="svc-icon">🛡️</div>
+            <h3>Cyber Security</h3>
+          </div>
+          <div class="svc-card">
+            <div class="svc-icon">🐍</div>
+            <h3>Python Development</h3>
+          </div>
+          <div class="svc-card">
+            <div class="svc-icon">💻</div>
+            <h3>Web Development</h3>
+          </div>
+          <div class="svc-card">
+            <div class="svc-icon">🎨</div>
+            <h3>Frontend Dev</h3>
+          </div>
+          <div class="svc-card">
+            <div class="svc-icon">✏️</div>
+            <h3>UI/UX Design</h3>
+          </div>
+          <div class="svc-card">
+            <div class="svc-icon">🤖</div>
+            <h3>AI Integration</h3>
+          </div>
+          <div class="svc-card">
+            <div class="svc-icon">🌐</div>
+            <h3>Portfolio Sites</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CONTACT ── -->
+    <section class="contact section reveal" id="contact">
+      <div class="container">
+        <span class="section-eyebrow">Let's connect</span>
+        <h2 class="section-heading">Got a project? Or just want to <span class="accent">say hello?</span></h2>
+        <p class="section-sub">
+          I'm always up for interesting conversations —
+          whether it's a project idea, collaboration, internship, or
+          just to talk tech. Drop a message. I reply fast.
+        </p>
+
+        <div class="contact-layout">
+          <div class="contact-info">
+            <a href="mailto:eswarasai@example.com" class="ci-card">
+              <div class="ci-icon">📧</div>
+              <div>
+                <strong>Email</strong>
+                <p>eswarasai@example.com</p>
+              </div>
+            </a>
+            <a href="tel:+919999999999" class="ci-card">
+              <div class="ci-icon">📞</div>
+              <div>
+                <strong>Phone</strong>
+                <p>+91 99999 99999</p>
+              </div>
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="ci-card">
+              <div class="ci-icon">💼</div>
+              <div>
+                <strong>LinkedIn</strong>
+                <p>linkedin.com/in/eswarasai</p>
+              </div>
+            </a>
+            <a href="https://github.com" target="_blank" class="ci-card">
+              <div class="ci-icon">🐙</div>
+              <div>
+                <strong>GitHub</strong>
+                <p>github.com/eswarasai</p>
+              </div>
+            </a>
+            <div class="ci-card">
+              <div class="ci-icon">📍</div>
+              <div>
+                <strong>Location</strong>
+                <p>Bapatla, Andhra Pradesh, India</p>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">Your Name</label>
+                <input type="text" id="fname" name="fname" placeholder="What should I call you?" required />
+              </div>
+              <div class="form-group">
+                <label for="femail">Your Email</label>
+                <input type="email" id="femail" name="femail" placeholder="you@example.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="fsubject">Subject</label>
+              <input type="text" id="fsubject" name="fsubject" placeholder="What's this about?" />
+            </div>
+            <div class="form-group">
+              <label for="fmessage">Your Message</label>
+              <textarea id="fmessage" name="fmessage" rows="5" placeholder="Tell me what's on your mind..."
+                required></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full" id="send-btn">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">Eswara Sai Katakam</span>
+        <p>© 2026 · Made with ☕ and a lot of debugging</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://linkedin.com" target="_blank" id="fl-li">LinkedIn</a>
+        <a href="https://github.com" target="_blank" id="fl-gh">GitHub</a>
+        <a href="https://twitter.com" target="_blank" id="fl-tw">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
